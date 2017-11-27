@@ -1,0 +1,1 @@
+# Qlik-Sense-Gauge-Extension
