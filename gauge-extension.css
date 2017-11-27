@@ -1,0 +1,170 @@
+.g-background {
+	background-color: #3c515d;
+    width: calc(100% - 42px);
+    height: calc(100% - 32px);
+	display:flex;
+	flex-direction:column;
+	border-radius: 3px;
+	border: 1px solid #506c7c;
+	padding: 15px 20px;
+	min-width: 160px;
+    min-height: 160px;
+}
+
+.g-header {
+	color: white;
+	font-size: 25px;
+}
+
+.gauge-wrapper {
+	flex: 1 1 auto;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-top: 10px;
+}
+
+.gauge {
+	border-radius: 200px;
+    border-right-color: #67fdec;
+    border-top-color: #55b8fc;
+    border-bottom-color: transparent;
+    border-left-color: #fc3d6b;
+    border-width: 30px;
+    border-style: solid;
+    height: 200px;
+    width: 200px;
+	
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	position: relative
+}
+
+.gauge-arrow {
+	position: relative;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.g-circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    border: 10px solid white;
+}
+
+.g-arrow {
+	width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 60px solid white;
+	position: absolute;
+    top: 18px;
+    left: -21px;
+	transform: rotate(-135deg);
+}
+
+.coverage-value {
+	position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 35px;
+	width: 100%;
+	text-align: center;
+}
+
+/*Size less than 250px*/
+.less-than-250 .g-header {
+    font-size: 15px;
+}
+
+.less-than-250 .gauge {
+    height: 90px;
+    width: 90px;
+	border-width: 20px;
+}
+
+.less-than-250 .coverage-value {
+    font-size: 15px;
+}
+
+.less-than-250 .g-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    border: 6px solid white;
+}
+
+.less-than-250 .g-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid white;
+    top: 14px;
+    left: -11px;
+}
+
+/*Size less than 340px*/
+.less-than-340 .g-header {
+    font-size: 15px;
+}
+
+.less-than-340 .gauge {
+    height: 100px;
+    width: 100px;
+	border-width: 25px;
+}
+
+.less-than-340 .coverage-value {
+    font-size: 15px;
+}
+
+.less-than-340 .g-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    border: 6px solid white;
+}
+
+.less-than-340 .g-arrow {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 30px solid white;
+    top: 14px;
+    left: -11px;
+}
+
+/*Size bigger than 500px*/
+.less-than-500 .gauge {
+	border-width: 40px;
+    height: 250px;
+    width: 250px;
+}
+
+.less-than-500 .g-circle {
+    width: 20px;
+    height: 20px;
+}
+
+.less-than-500 .g-arrow {
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 85px solid white;
+    top: 19px;
+    left: -31px;
+}
+
+
+
+
+   
+
+
+
+
+
+
